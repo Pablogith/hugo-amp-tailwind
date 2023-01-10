@@ -1,0 +1,11 @@
+<article class="summary">
+    <h2 class="text-3xl text-blue-700 font-bold underline">{{.Title}}</h2>
+    {{ with .Params.Image.Src }}
+        {{- partial "blocks/image.html" (dict "src" . "alt" $.Title "class" "summary__image") -}}
+    {{ end }}
+    <p>{{.Summary}}</p>
+    <a class="button" role="button"
+        href="{{.Permalink}}"
+        data-rel="prefetch"
+        aria-label="{{ i18n "keepReading" }} {{.Title}}">{{ i18n "keepReading" }}</a>
+</article>
