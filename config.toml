@@ -8,41 +8,67 @@ theme = "amperage"
 pygmentsUseClasses = true
 
 # Number of posts shown per page (dafault: 10)
-paginate = 3
+paginate = 5
 
 # Language sections
 [languages]
     [languages.en]
-        contentDir = "content"
+        contentDir = "content/en"
         languageName = "English"
         languageCode = "en"
         title = "Amperage theme!"
         description = "This is an demo for the Amperage theme!"
         weight = 1
-    [languages.es]
-        contentDir = "content/spanish"
-        languageName = "Español"
-        languageCode = "es"
-        title = "Tema Amperage!"
-        description = "Esta es una demo para el tema Amperage!"
-        weight = 2
+    [languages.pl]
+        contentDir = "content/pl"
+        languageName = "Polish"
+        languageCode = "pl"
+        title = "Amperage theme!"
+        description = "To jest demo dla Amperage theme!"
+        weight = 1
+        [[languages.pl.menu.main]]
+            identifier = "home"
+            name = "Strona główna"
+            url = "/pl/"
+            weight = 7
+        [[languages.pl.menu.main]]
+            identifier = "post"
+            name = "Posty"
+            url = "/pl/post/"
+            weight = 8
+        [[languages.pl.menu.main]]
+            identifier = "offers"
+            name = "Oferty"
+            url = "/pl/offer/"
+            weight = 9
+        [[languages.pl.menu.main]]
+            identifier = "about-us"
+            name = "O nas"
+            url = "/pl/about-us/"
+            weight = 10
 
 # Menu elements
 [[menu.main]]
-    identifier = "hugo"
-    name = "GoHugo"
-    url = "https://gohugo.io"
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 7
+[[menu.main]]
+    identifier = "post"
+    name = "Posts"
+    url = "/post/"
     weight = 8
 [[menu.main]]
-    identifier = "author"
-    name = "The author"
-    url = "https://asur.dev"
+    identifier = "offers"
+    name = "Offers"
+    url = "/offer/"
     weight = 9
 [[menu.main]]
-    identifier = "github"
-    name = "The code!"
-    url = "https://github.com/asurbernardo/amperage"
+    identifier = "about-us"
+    name = "About Us"
+    url = "/about-us/"
     weight = 10
+
 
 # Enable only tags taxonomy
 [taxonomies]

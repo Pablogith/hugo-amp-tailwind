@@ -11,15 +11,7 @@
 <link rel="canonical" href="{{ .Permalink }}" >
 <link rel="sitemap" href="{{ "sitemap.xml" | absURL }}" type="application/xml" />
 
-TEST
-<style amp-custom>
-    {{ with resources.Get "custom.scss" | resources.ToCSS | resources.Minify }}
-        {{ .Content | safeCSS }}
-        {{ . }}
-    {{ end }}
-</style>
-
-{{- partial "head/og-metas.html" . -}}
+{{- partial "head/_og-metas.html" . -}}
 
 {{- partial "head/twitter-cards-metas.html" . -}}
 

@@ -1,0 +1,10 @@
+Testimonials:
+- name: Judith Black
+  position: CEO at PureInsights
+  opinion: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla
+    vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna,
+    sit.
+- name: John Wick
+  position: Movie series hero
+  opinion: Logger, handler, and formatter created for DataDog log management on Laravel
+    framework.
